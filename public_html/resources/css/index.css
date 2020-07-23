@@ -61,14 +61,14 @@ html {
 
 /* CONTENT */
 .cover {
-    background-image: linear-gradient(rgb(255 255 255) 0%, rgba(108, 181, 238, 0.35) 15%, rgba(0, 0, 0, 0.83) 90%), url(../img/stock-teen.jpg);
+    background-image: linear-gradient(rgb(255 255 255) 0%, rgb(108 181 238 / 15%) 18%, rgb(0 0 0 / 85%) 70%), url(../img/stock-teen.jpg);
     background-size: cover;
     height: 90vh;
 }
 
 .cover-text {
     position: absolute;
-    top: 50%;
+    top: 60%;
     padding: 50px;
     color: #fff;
     border-radius: 15px;
@@ -83,11 +83,27 @@ html {
     font-weight: 300;
 }
 
+.cover-text h1:after {
+    display: block;
+    height: 2px;
+    background-color: #45b8d7;
+    content: " ";
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
 .cover-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+
+.cover-content .btn {
+    font-weight: 500;
+    border-width: 2px;
 }
 
 .cover-text {
