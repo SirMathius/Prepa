@@ -15,6 +15,9 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+        </script>
+        
         <!--FONTS-->
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
 
@@ -60,17 +63,17 @@
             </nav>        
         </header>
         <main>   
-            <article class="cover">
+            <section class="cover">
                  <div class="cover-text">
                     <img src="./resources/img/logo.png">
                      <div class="cover-content">
                         <h1>Por un <strong>futuro</strong> en <strong>libertad</strong></h1>
-                         <a class="btn btn-primary btn-lg" href="#" role="button">CONTACTANOS</a> 
+                         <a class="btn btn-primary outline" href="#" role="button">CONTACTANOS</a> 
                      </div>
                     
                  </div>   
-            </article>
-            <article class="mission">
+            </section>
+            <section class="mission">
                 <h2>NUESTRA MISI&Oacute;N</h2>
                 <div class="row mission-cards">
                   <div class="col-sm-4">
@@ -101,7 +104,68 @@
                     </div>
                   </div>
                 </div>
-            </article>
+            </section>
+            <section>
+                <div id="map"></div>  
+            </section>
+            <section class="section-form">  
+                <h2>CONTACTATE CON NOSOTROS</h2>
+                <div class="row">
+                    <form class="contact-form" method="post" action="#">
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="name">Tu nombre</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <input id="name" name="name" type="text" placeholder="tu nombre" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label for="email">Tu Correo</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <input id="email" name="email" type="email" placeholder="abc@micorreo.com" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label for="find-us">¿Como nos conociste?</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <select id="find-us" name="find-us">
+                                    <option value="friends" selected>Amigos</option>
+                                    <option value="search">Internet</option>
+                                    <option value="ad">Anuncios</option>
+                                    <option value="other">Otros</option>
+                                </select>
+                            </div>
+                        </div>                      
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label>Dejanos tu comentario</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <textarea id="message" name="message" placeholder="tu comentario"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="">
+                                <label>&nbsp;</label>
+                            </div>
+                        </div>
+                        <div class="row submit-btn">
+                            <div class="col-sm-6">
+                                <label>&nbsp;</label>
+                            </div>
+                            <div class="col-sm-6 form-btn">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                                
+                            </div>
+                        </div>
+                    </form>
+                </div>
+        </section>
         </main>
 
         <footer>

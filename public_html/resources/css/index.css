@@ -116,17 +116,24 @@ html {
 }
 
 /* button primary */
-.btn-primary {
+.btn-primary.outline{
     color: rgb(69 184 213);
     background-color: rgb(0 123 255 / 0%);
     border-color: rgb(67 184 215);
 }
 
-.btn-primary:hover {
+.btn-primary.outline:hover {
     color: #fff;
     background-color: rgb(67 184 215);
     border-color: rgb(67 184 215);
 }
+
+.btn-primary {
+    color: #fff;
+    background-color: #45b8d7;
+    border-color: #45b8d7;
+}
+
 
 h2 {
     font-size: 200%;
@@ -176,7 +183,7 @@ h5:after {
     margin-bottom: 20px;
 }
 
-article {
+section {
     padding: 50px;
     width: 80%;
     margin: auto;
@@ -308,4 +315,48 @@ footer .footer-wrapper .social-icons .icons {
 
 footer h5 {
     text-align: center;
+}
+
+ /*formulario*/
+
+.contact-form {
+    margin: 0 auto;
+    width: 80%;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea { height: 100px; }
+input[type="checkbox"] { margin: 10px 5px 10px 0; }
+
+
+.question {
+    display: flex;
+    align-items: center
+}
+
+.sbmit-btn {
+    display: flex;
+    align-content: center
+}
+
+.form-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form .row {
+    margin-bottom: 5px;
+}
+#map {
+    height: 400px;
+    width: 100%;
 }
