@@ -11,20 +11,34 @@
         
         <!-- BOOTSTRAP 4 -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-        
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
-        </script>
-        
-        <!--FONTS-->
+
+        <!-- FONTS -->
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
 
-        <!--Estilos-->
-        <link rel="stylesheet" href="./resources/css/index.css">
-        
+        <!-- Iconos -->
         <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+        
+        <!-- MAP -->
+         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+          integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+          crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+          integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+          crossorigin=""></script>
+        
+        
+         <!-- Estilos -->
+        <link rel="stylesheet" href="./resources/css/index.css">
+        <link rel="stylesheet" href="./resources/css/map.css">
+        <link rel="stylesheet" href="./resources/css/header.css">
+        
+        <!-- Script -->
+        <script src="./resources/js/noframework.waypoints.min.js"></script>
+        <script type="text/javascript" src="./resources/js/index.js"></script>
+        <script type="text/javascript" src="./resources/js/map.js"></script>
         
     </head>
     <body>
@@ -50,13 +64,13 @@
                     </div>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre nosotros</a>
+                    <a class="nav-link" href="#about">Sobre nosotros</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Dónde estamos</a>
+                    <a class="nav-link" href="#where">Dónde estamos</a>
                   </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link" href="#contact">Contacto</a>
                   </li>
                 </ul>
               </div>
@@ -73,99 +87,124 @@
                     
                  </div>   
             </section>
-            <section class="mission">
-                <h2>NUESTRA MISI&Oacute;N</h2>
-                <div class="row mission-cards">
-                  <div class="col-sm-4">
-                    <div class="card">
-                      <div class="card-body">
-                        <ion-icon name="ear-outline" class="icon"></ion-icon>
-                        <h3 class="card-title">ESCUCHAR</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fringilla sapien in erat euismod cursus. Fusce non neque erat. Morbi semper condimentum purus, auctor vehicula sapien molestie vitae. Nunc fringilla tempus lectus vel eleifend. Maecenas semper ante id nulla bibendum porttitor. Cras molestie ipsum vitae commodo euismod. Curabitur nec ipsum commodo, dignissim urna vitae, vehicula leo.</p>
+            <section id="about" class="mission">
+                <article>
+                    <h2>NUESTRA MISI&Oacute;N</h2>
+                    <div class="row mission-cards">
+                      <div class="col-sm-4">
+                        <div class="card">
+                          <div class="card-body">
+                            <ion-icon name="ear-outline" class="icon"></ion-icon>
+                            <h3 class="card-title">ESCUCHAR</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fringilla sapien in erat euismod cursus. Fusce non neque erat. Morbi semper condimentum purus, auctor vehicula sapien molestie vitae. Nunc fringilla tempus lectus vel eleifend. Maecenas semper ante id nulla bibendum porttitor. Cras molestie ipsum vitae commodo euismod. Curabitur nec ipsum commodo, dignissim urna vitae, vehicula leo.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="card">
+                          <div class="card-body">
+                            <ion-icon name="school-outline" class="icon"></ion-icon>
+                            <h3 class="card-title">CAPACITAR</h3>
+                            <p class="card-text">Sed vitae nulla ut orci placerat posuere vitae ac mi. Quisque id semper odio. Maecenas est nulla, semper sed arcu et, semper iaculis augue. Duis congue arcu nec lacus scelerisque, quis dictum magna volutpat. Duis ac suscipit risus, eget molestie ligula. Vestibulum elementum nunc ac mi ornare, aliquet facilisis massa sodales. Vestibulum dignissim purus quis faucibus lacinia. Mauris eget metus efficitur, gravida dui at, auctor libero. Nulla facilisi.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="card">
+                          <div class="card-body">
+                            <ion-icon name="people-outline" class="icon"></ion-icon>
+                            <h3 class="card-title">INTEGRAR</h3>
+                            <p class="card-text">Pellentesque iaculis odio non tellus dictum, ac ultrices risus ullamcorper. Vivamus id volutpat erat. Vivamus id dictum enim. Praesent hendrerit lobortis est, a tristique justo varius id. Proin ullamcorper pellentesque posuere. Praesent hendrerit magna eleifend malesuada tincidunt. Nullam in orci ut ex tempus fringilla eu in lacus. Vivamus fringilla felis vulputate rhoncus ullamcorper.</p>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="card">
-                      <div class="card-body">
-                        <ion-icon name="school-outline" class="icon"></ion-icon>
-                        <h3 class="card-title">CAPACITAR</h3>
-                        <p class="card-text">Sed vitae nulla ut orci placerat posuere vitae ac mi. Quisque id semper odio. Maecenas est nulla, semper sed arcu et, semper iaculis augue. Duis congue arcu nec lacus scelerisque, quis dictum magna volutpat. Duis ac suscipit risus, eget molestie ligula. Vestibulum elementum nunc ac mi ornare, aliquet facilisis massa sodales. Vestibulum dignissim purus quis faucibus lacinia. Mauris eget metus efficitur, gravida dui at, auctor libero. Nulla facilisi.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="card">
-                      <div class="card-body">
-                        <ion-icon name="people-outline" class="icon"></ion-icon>
-                        <h3 class="card-title">INTEGRAR</h3>
-                        <p class="card-text">Pellentesque iaculis odio non tellus dictum, ac ultrices risus ullamcorper. Vivamus id volutpat erat. Vivamus id dictum enim. Praesent hendrerit lobortis est, a tristique justo varius id. Proin ullamcorper pellentesque posuere. Praesent hendrerit magna eleifend malesuada tincidunt. Nullam in orci ut ex tempus fringilla eu in lacus. Vivamus fringilla felis vulputate rhoncus ullamcorper.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                </article>
             </section>
-            <section>
-                <div id="map"></div>  
+            <section id="where" class="section-map gray-bg">
+                <h2>DÓNDE ESTAMOS</h2>
+                <article class="row">  
+                        <div class="loc-container col-md-6">
+                            <div class="card">
+                              <div class="card-body">
+                                <h3>PREPA - La Matanza</h3>
+                                <p class="card-text"><ion-icon name="location-outline"></ion-icon><span id="dir1" class="map-link">Dirección 123</span></p>
+                                <p class="card-text"><ion-icon name="call-outline"></ion-icon>(011) 2345 - 3423</p>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-body">
+                                <h3>PREPA - Otra Locación</h3>
+                                    <p class="card-text"><ion-icon name="location-outline"></ion-icon><span id="dir2" class="map-link">Dirección 456</span></p>
+                                    <p class="card-text"><ion-icon name="call-outline"></ion-icon>(011) 2345 - 3423</p>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="map-container col-md-6">
+                            <div id="map"></div>
+                        </div>
+                 </article>
             </section>
-            <section class="section-form">  
-                <h2>CONTACTATE CON NOSOTROS</h2>
-                <div class="row">
-                    <form class="contact-form" method="post" action="#">
-                        <div class="row">
-                            <div class="col span-1-of-3">
-                                <label for="name">Tu nombre</label>
+            <section id="contact" class="section-form">  
+                <article>
+                    <h2>CONTACTATE CON NOSOTROS</h2>
+                    <div class="row">
+                        <form class="contact-form" method="post" action="#">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="name">Tu nombre</label>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input id="name" name="name" type="text" placeholder="tu nombre" required>
+                                </div>
                             </div>
-                            <div class="col-sm-6">
-                                <input id="name" name="name" type="text" placeholder="tu nombre" required>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="email">Tu Correo</label>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input id="email" name="email" type="email" placeholder="abc@micorreo.com" required>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <label for="email">Tu Correo</label>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="find-us">¿Como nos conociste?</label>
+                                </div>
+                                <div class="col-sm-6">
+                                    <select id="find-us" name="find-us">
+                                        <option value="friends" selected>Amigos</option>
+                                        <option value="search">Internet</option>
+                                        <option value="ad">Anuncios</option>
+                                        <option value="other">Otros</option>
+                                    </select>
+                                </div>
+                            </div>                      
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label>Dejanos tu comentario</label>
+                                </div>
+                                <div class="col-sm-6">
+                                    <textarea id="message" name="message" placeholder="tu comentario"></textarea>
+                                </div>
                             </div>
-                            <div class="col-sm-6">
-                                <input id="email" name="email" type="email" placeholder="abc@micorreo.com" required>
+                            <div class="row">
+                                <div class="">
+                                    <label>&nbsp;</label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <label for="find-us">¿Como nos conociste?</label>
+                            <div class="row submit-btn">
+                                <div class="col-sm-6">
+                                    <label>&nbsp;</label>
+                                </div>
+                                <div class="col-sm-6 form-btn">
+                                    <button type="submit" class="btn btn-primary">ENVIAR</button>
+
+                                </div>
                             </div>
-                            <div class="col-sm-6">
-                                <select id="find-us" name="find-us">
-                                    <option value="friends" selected>Amigos</option>
-                                    <option value="search">Internet</option>
-                                    <option value="ad">Anuncios</option>
-                                    <option value="other">Otros</option>
-                                </select>
-                            </div>
-                        </div>                      
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <label>Dejanos tu comentario</label>
-                            </div>
-                            <div class="col-sm-6">
-                                <textarea id="message" name="message" placeholder="tu comentario"></textarea>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="">
-                                <label>&nbsp;</label>
-                            </div>
-                        </div>
-                        <div class="row submit-btn">
-                            <div class="col-sm-6">
-                                <label>&nbsp;</label>
-                            </div>
-                            <div class="col-sm-6 form-btn">
-                                <button type="submit" class="btn btn-primary">Submit</button>
-                                
-                            </div>
-                        </div>
-                    </form>
-                </div>
-        </section>
+                        </form>
+                    </div>
+                </article>
+            </section>
         </main>
 
         <footer>
