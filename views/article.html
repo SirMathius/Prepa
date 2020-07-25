@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+       <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="author" content="Sir Mathius https://github.com/SirMathius">
+        <meta name="description" content="PREPA - Por un futuro en libertad">    
+        
+        <title>PREPA | Por un futuro en libertad</title>  
+        <link rel='icon' href='/favicon.ico' type='image/x-icon'>
+        
+        <!-- BOOTSTRAP 4 -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+        <!-- FONTS -->
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+
+        <!-- Iconos -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <!-- MAP -->
+         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+          integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+          crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+          integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+          crossorigin=""></script>
+        
+        
+         <!-- Estilos -->
+        <link rel="stylesheet" href="../resources/css/index.css">
+        <link rel="stylesheet" href="../resources/css/templates/header.css">
+        <link rel="stylesheet" href="../resources/css/article.css">
+        
+        <!-- Script -->      
+        <script type="text/javascript" src="../resources/js/template.js"></script>       
+        <script type="text/javascript" src="../resources/js/main.js"></script>
+        <script type="text/javascript" src="../resources/js/articleLoad.js"></script>
+        
+        <script type="text/javascript" src="../resources/js/templates/header.js"></script>
+        
+        <script src="../resources/js/noframework.waypoints.min.js"></script>
+        
+    </head>
+    <body>
+       
+        <div id="header"></div>
+        <main class="article">  
+            <section id="article-img" class="img-wrapper">
+                <h1>RECURSOS</h1>
+            </section>
+            <div id="anchor"></div>
+            <section class="article row">
+                <aside class="col-sm-3">
+                    <div class="navbar shadow">                     
+                        <ul id="article-menu" class="nav flex-column article-menu"></ul>
+                    </div>
+                </aside>
+                <article class="article-content col-sm-9 shadow">
+                    <h2 id="article-title">titulo</h2>
+                    <div id="article-text" class="article-text"></div>
+                    <div class="article-buttons">
+                        <a type="button" class="btn btn-primary btn-md">AUTOEVALUACI&Oacute;N<span class="material-icons">school</span></a>
+                        <a id="article-btn-download" type="button" class="btn btn-primary outline btn-md" download>DESCARGAR ART&Iacute;CULO<span class="material-icons">cloud_download</span></a>
+                    </div>
+                </article>
+            </section>
+            
+            
+        </main>
+
+        <div id="footer"></div>
+    </body>
+    
+</html>

@@ -1,0 +1,94 @@
+main.article {
+    background-color: #fbfbfb;
+}
+
+section.article {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0 50px 0;
+}
+
+.img-wrapper {
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-wrapper h1 {
+    color: #fff;
+}
+
+.img-wrapper h1:after {
+    display: none;
+}
+
+.article-content {
+    padding: 50px;
+}
+
+.article-buttons .material-icons {
+    margin-left: 10px;
+}
+
+.article-buttons  {
+    display: flex;
+    flex: 1 1 auto;
+    width: 100%;
+    justify-content: center;
+}
+
+.article-buttons  a {
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.article-text {
+    text-align: justify;
+    padding: 50px 0 50px 0;
+    font-size: 80%;
+    font-family: 'Noto-serif', 'Arial', serif;
+}
+
+.shadow {
+    -webkit-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.14);
+    -moz-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.14);
+    box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.14);
+}
+
+.article-menu .article-link {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    margin: 5px;
+    font-weight: 200;
+}
+
+.article-menu .article-link.active {
+    font-weight: 500;
+}
+
+.article-menu .article-link:hover:after {
+    display: block;
+    height: 2px;
+    background-color: #45b8d7;
+    content: " ";
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+

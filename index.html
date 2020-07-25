@@ -19,7 +19,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
 
         <!-- Iconos -->
-        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         
         <!-- MAP -->
          <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
@@ -32,61 +32,36 @@
         
          <!-- Estilos -->
         <link rel="stylesheet" href="./resources/css/index.css">
+        <link rel="stylesheet" href="./resources/css/templates/header.css">
+        <link rel="stylesheet" href="./resources/css/templates/footer.css">
         <link rel="stylesheet" href="./resources/css/map.css">
-        <link rel="stylesheet" href="./resources/css/header.css">
         
         <!-- Script -->
-        <script src="./resources/js/noframework.waypoints.min.js"></script>
-        <script type="text/javascript" src="./resources/js/index.js"></script>
+        <script type="text/javascript" src="./resources/js/templates/header.js"></script>
+        <script type="text/javascript" src="./resources/js/template.js"></script>
+        <script type="text/javascript" src="../resources/js/articleLoad.js"></script>
+        <script type="text/javascript" src="./resources/js/main.js"></script>
         <script type="text/javascript" src="./resources/js/map.js"></script>
+
+        <!-- waypoints, always load last-->
+        <script src="./resources/js/noframework.waypoints.min.js"></script>
         
     </head>
     <body>
        
-        <header>
-            <nav class="navbar navbar-expand-lg sticky-top">
-              <a class="navbar-brand logo" href="#">
-                <img src="./resources/img/logo.png" class="d-inline-block align-top" alt="" loading="lazy">
-                PREPA
-              </a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse menu" id="navbarNavDropdown">
-                <ul class="navbar-nav menu-links">
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Recursos
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="#">Manifiesto</a>
-                      <a class="dropdown-item" href="#">Programa de Resoluci&oacute;n Penal</a>
-                    </div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#about">Sobre nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#where">Dónde estamos</a>
-                  </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contacto</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>        
-        </header>
+        <div id="header"></div>
         <main>   
             <section class="cover">
                  <div class="cover-text">
                     <img src="./resources/img/logo.png">
                      <div class="cover-content">
                         <h1>Por un <strong>futuro</strong> en <strong>libertad</strong></h1>
-                         <a class="btn btn-primary outline" href="#" role="button">CONTACTANOS</a> 
+                         <a class="btn btn-primary outline" href="#contact" role="button">CONTACTANOS</a> 
                      </div>
                     
                  </div>   
             </section>
+            <div id="anchor"></div>
             <section id="about" class="mission">
                 <article>
                     <h2>NUESTRA MISI&Oacute;N</h2>
@@ -206,36 +181,7 @@
                 </article>
             </section>
         </main>
-
-        <footer>
-            <div class="footer-wrapper">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <ul class="footer-nav">
-                            <h5>Nuesto Sitio</h5>
-                            <li><a href="#">Principal</a></li>
-                            <li><a href="#">Recursos</a></li>
-                            <li><a href="#">Sobre Nosotros</a></li>
-                            <li><a href="#">Donde Estamos</a></li>
-                            <li><a href="#">Contacto</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6">
-                        <ul class="social-icons">
-                            <h5>¡Seguinos en las redes!</h5>
-                            <div class="icons">
-                                <li><a href="#"><ion-icon name="logo-twitter" class="logo-twitter"></ion-icon></a></li>
-                                <li><a href="#"><ion-icon name="logo-instagram" class="logo-instagram"></ion-icon></a></li>
-                            </div>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row copy">
-                    <p>Copyright &copy; 2020 by PREPA. Todos los derechos reservados.</p>
-                </div>               
-            </div>
-            <div class="row brand"><a href="https://github.com/SirMathius" target="_blank">SirMathius</a></div> 
-        </footer>
+        <div id="footer"></div>
     </body>
     
 </html>

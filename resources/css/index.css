@@ -133,19 +133,19 @@ html {
 
 /* button primary */
 .btn-primary.outline{
-    color: rgb(69 184 213);
+    color: rgb(69 184 213)!important;
     background-color: rgb(0 123 255 / 0%);
     border-color: rgb(67 184 215);
 }
 
 .btn-primary.outline:hover {
-    color: #fff;
+    color: #fff!important;
     background-color: rgb(67 184 215);
     border-color: rgb(67 184 215);
 }
 
 .btn-primary {
-    color: #fff;
+    color: #fff!important;
     background-color: #45b8d7;
     border-color: #45b8d7;
 }

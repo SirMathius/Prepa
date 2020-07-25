@@ -1,24 +1,6 @@
 $(document).ready(function() {
-    var waypoint = new Waypoint({
-    element: document.getElementById('about'),
-    handler: function(direction) {
-        if(direction == 'down'){
-           $('nav').addClass('sticky');
-        } else {
-            $('nav').removeClass('sticky');
-        }
-    }});
- 
-
     
-    /* navigation scroll */
-    // Select all links with hashes
-    $('a[href*="#"]')
-    // Remove links that don't actually link to anything
-    .not('[href="#"]')
-    .not('[href="#0"]')
-    .click(function(event) {
-
+    $(document).on('click', 'a[href*="#"]:not([href="#"]):not([href="#0"])', function(){
         // On-page links
         if ( location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
           && location.hostname == this.hostname ) {
@@ -26,18 +8,34 @@ $(document).ready(function() {
               var target = $(this.hash);            
               target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 
-              // Does a scroll target exist?
               if (target.length) {
                 // Only prevent default if animation is actually gonna happen
                 event.preventDefault();
 
                 $('html, body').animate({
                   scrollTop: target.offset().top
-                }, 1000, function() {
-
-                });
+                }, 1000, function() {});
             }
         }
     });
-    
 });
+
+function getParam(key) {
+    var searchParams = window.location.search;
+    var params = searchParams.substring(1, searchParams.length);
+    
+    if(params){
+        params = params.split('&');
+        var value;
+        $(params).each(function(idx) {
+            var param = params[idx].split('=');
+            
+            if(param[0] == key){
+               value = param[1];
+            }
+        });
+        
+        return value;
+    }   
+}
+
