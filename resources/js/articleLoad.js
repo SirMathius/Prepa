@@ -2,7 +2,8 @@ var menuItems = [];
 var origin = getBaseUrl();
 var textPath = getBaseUrl() + '/material/textos';
 var imgPath = getBaseUrl() + '/material/imagenes';
-var downloadPath = getBaseUrl() + '/material/descarga'
+var downloadPath = getBaseUrl() + '/material/descarga';
+var articlePath = origin +'/views/article.html';
 
 $(document).ready(function() {
     
@@ -143,7 +144,7 @@ function loadArticleMainMenu () {
     if(menu) {
       $(menuItems).each(function( index) {
             var formattedText = formatCapitalize(menuItems[index]);
-            menu.append('<a class="dropdown-item" href="/views/article.html?article=' + menuItems[index]  + '">' + formattedText + '</a>');
+            menu.append('<a class="dropdown-item" href="'+ articlePath+ '?article=' + menuItems[index]  + '">' + formattedText + '</a>');
         }); 
     }   
 }
