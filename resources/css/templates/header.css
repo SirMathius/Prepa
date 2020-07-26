@@ -1,0 +1,23 @@
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+    padding: 0 10px 0 10px;
+}
+
+.sticky .menu {
+    font-weight: 200;
+    font-size: 100%;
+}
+
+.sticky .logo img {
+   width: 40px;
+}
+
+.sticky .logo {
+   font-weight: 500;
+}

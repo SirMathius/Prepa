@@ -1,0 +1,376 @@
+/* 45b8d7 - celeste */
+/* cfedf5 - celeste claro */
+/* bbcfe8 - celeste grisaceo */
+
+/* DEFAULT */
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Noto', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.body { overflow-x: hidden;}
+
+.gray-bg { background-color: #fbfbfb; }
+
+.card{
+    border: none;
+    background-color: transparent
+}
+
+.card-text {
+    text-align: justify;
+    font-weight: 200;
+}
+
+.card-text i {
+    margin-right: 10px;
+    color: #45b8d7;
+}
+
+/* HEADER */
+
+.menu {
+    justify-content: flex-end;
+    font-weight: 500;  
+}
+
+.menu-links {
+    height: 50px;
+}
+
+.navbar-toggler {
+   color: #555; 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 200%;
+    color: #333;
+}
+.logo:hover {
+    color: #333;
+}
+
+.logo img {
+   width: 50px;
+   height: 100%; 
+   margin-right: 10px;
+}
+
+.menu a {
+    color: #333;
+}
+
+.menu a:hover,
+.menu a:active { border-bottom: 2px solid #45b8d7; }
+
+.menu .dropdown-item:hover {
+    border-bottom: none;
+    background-color: rgba(0,123,255,.25);
+}
+
+/* CONTENT */
+.cover {
+    background-image: linear-gradient(rgb(255 255 255) 0%, rgb(108 181 238 / 15%) 18%, rgb(0 0 0 / 85%) 70%), url(../img/stock-teen.jpg);
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+}
+
+.cover-text {
+    position: absolute;
+    top: 50%;
+    padding: 50px;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.cover-text a {
+    flex-grow: 0;
+}
+
+.cover-text h1 {
+    font-size: 300%;
+    font-weight: 300;
+}
+
+.cover-text h1:after {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+.cover-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cover-content .btn {
+    font-weight: 500;
+    border-width: 2px;
+    font-size: 100%;
+}
+
+.cover-text {
+    display: flex; 
+    
+}
+
+.cover-text img {
+    width: auto;
+    height: 150px;
+    margin-right: 30px;
+}
+
+/* button primary */
+.btn-primary.outline{
+    color: rgb(69 184 213)!important;
+    background-color: rgb(0 123 255 / 0%);
+    border-color: rgb(67 184 215);
+}
+
+.btn-primary.outline:hover {
+    color: #fff!important;
+    background-color: rgb(67 184 215);
+    border-color: rgb(67 184 215);
+}
+
+.btn-primary {
+    color: #fff!important;
+    background-color: #45b8d7;
+    border-color: #45b8d7;
+}
+
+
+h2 {
+    font-size: 200%;
+    font-weight: 300;
+    text-align: center;
+    margin: 30px 0 50px 0;
+}
+
+h1:after,
+h2:after,
+h3:after,
+h5:after {
+    display: block;
+    height: 2px;
+    background-color: #45b8d7;
+    content: " ";
+}
+
+h3 {
+   font-size: 150%;
+   font-weight: 300; 
+}
+
+h2:after {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h3:after {
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h5 {
+    font-size: 125%;
+    color: #888;
+}
+
+h5:after {
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+section {
+    padding: 70px 50px 50px 50px;
+}
+
+article {
+    width: 80%;
+    margin: auto;
+}
+
+.mission-cards {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.mission-cards .card .card-body i {
+    font-size: 200%;
+    margin-bottom: 20px;
+    color: #45b8d7
+    
+}
+
+.mission-cards .card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* FOOTER */
+.brand {
+    background-color: black;
+    color: #777;
+    display: flex;
+    justify-content: center;
+    flex: 0 0 100%;
+    font-size: 0.75rem;
+    padding: 5px 0;
+    margin:0;
+    width: 100%
+}
+
+.brand a {
+    color: #777;
+}
+
+footer {
+    background-color: #333;    
+    font-size: 80%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.footer-nav { float: left; }
+.social-icons { float: right; }
+
+.footer-nav li,
+.social-icons li {
+    display: block;
+    margin-right: 20px;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.brand i {
+    margin: 5px;
+    font-size: 110%;
+}
+
+.footer-nav li:last-child,
+.social-icons li:last-child { margin-right: 0; }
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-icons li a:link,
+.social-icons li a:visited {
+    border: none;
+    color: #555;
+    -webkit-transition: color 0.2s;
+    -o-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active,
+.social-icons li a:hover,
+.social-icons li a:active { color: #888; }
+.social-icons li a:link,
+.social-icons li a:visited { font-size: 160%; }
+
+.mdi-facebook,
+.mdi-instagram,
+.mdi-twitter { 
+    -webkit-transition: color 0.2s; 
+    -o-transition: color 0.2s; 
+    transition: color 0.2s; 
+}
+
+.mdi-twitter:hover { color: #55acee; }
+.mdi-instagram:hover { color: #e95950; }
+.mdi-facebook:hover { color: #3b5998; }
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-wrapper .copy {
+    justify-content: center;
+}
+
+footer .footer-wrapper {
+    width: 80%;
+    padding: 50px 50px 0 50px;
+}
+
+footer .footer-wrapper .social-icons .icons {
+    display: flex;
+    justify-content: center;   
+}
+
+footer h5 {
+    text-align: center;
+}
+
+ /*formulario*/
+
+.contact-form {
+    margin: 0 auto;
+    width: 80%;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea { height: 100px; }
+input[type="checkbox"] { margin: 10px 5px 10px 0; }
+
+
+.question {
+    display: flex;
+    align-items: center
+}
+
+.sbmit-btn {
+    display: flex;
+    align-content: center
+}
+
+.form-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form .row {
+    margin-bottom: 5px;
+}
+#map {
+    height: 400px;
+    width: 100%;
+}

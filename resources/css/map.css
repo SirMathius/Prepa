@@ -1,0 +1,21 @@
+#mapid { height: 180px; }
+
+section.section-map article {
+    display: flex;
+    justify-content: space-around;
+    margin:auto;
+}
+
+.section-map .card {
+    border: :none;
+}
+
+.section-map .card h3:after {
+    margin: 20px 0 15px 0;
+    
+}
+
+.map-link:hover {
+    color: #45b8d7;
+    cursor: pointer;
+}
