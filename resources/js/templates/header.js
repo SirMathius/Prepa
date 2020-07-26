@@ -30,7 +30,7 @@ function replaceUrl(){
     });  
 
     var logo = $('header img');
-    $(logo).attr('src', getBaseUrl() + $($(logo).attr('src'));
+    $(logo).attr('src', getBaseUrl() + $(logo).attr('src'));
     
 }
 
