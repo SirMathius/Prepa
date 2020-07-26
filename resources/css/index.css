@@ -27,8 +27,9 @@ html {
     font-weight: 200;
 }
 
-.card-text ion-icon {
+.card-text i {
     margin-right: 10px;
+    color: #45b8d7;
 }
 
 /* HEADER */
@@ -211,16 +212,14 @@ article {
 .mission-cards {
     display: flex;
     justify-content: space-around;
-}
-
-.mission-cards .card .card-body .icon {
-    font-size: 200%;
-    margin-bottom: 20px;
     
 }
 
-.icon {
-  color: #45b8d7;
+.mission-cards .card .card-body i {
+    font-size: 200%;
+    margin-bottom: 20px;
+    color: #45b8d7
+    
 }
 
 .mission-cards .card .card-body {
@@ -270,6 +269,10 @@ footer {
     margin-right: 20px;
 }
 
+.brand i {
+    margin: 5px;
+    font-size: 110%;
+}
 
 .footer-nav li:last-child,
 .social-icons li:last-child { margin-right: 0; }
@@ -292,15 +295,17 @@ footer {
 .social-icons li a:link,
 .social-icons li a:visited { font-size: 160%; }
 
-.ion-social-twitter,
-.ion-social-instragam { 
+.mdi-facebook,
+.mdi-instagram,
+.mdi-twitter { 
     -webkit-transition: color 0.2s; 
     -o-transition: color 0.2s; 
     transition: color 0.2s; 
 }
 
-.logo-twitter:hover { color: #55acee; }
-.logo-instagram:hover { color: #e95950; }
+.mdi-twitter:hover { color: #55acee; }
+.mdi-instagram:hover { color: #e95950; }
+.mdi-facebook:hover { color: #3b5998; }
 
 footer p {
     color: #888;

@@ -32,8 +32,9 @@ section.article {
     padding: 50px;
 }
 
-.article-buttons .material-icons {
+.article-buttons i {
     margin-left: 10px;
+    font-size: 120%;
 }
 
 .article-buttons  {
@@ -44,9 +45,13 @@ section.article {
 }
 
 .article-buttons  a {
-    width: 300px;
-    padding: 10px;
+    width: 280px;
     margin: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 100%;
+    
 }
 
 .article-text {
