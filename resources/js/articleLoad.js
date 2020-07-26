@@ -27,13 +27,18 @@ function loadMenues() {
 
 function loadNames(callback) {
     $.ajax({
-        url: textPath,
+        url: textPath + '/resumen.html',
         success: function (data) {
-            $(data).find("a:contains(" + '.html' + ")").each(function () {
+            /*$(data).find("a:contains(" + '.html' + ")").each(function () {
                 var text = $(this).text().replace('.html', '');    
-                menuItems.push(text);
-            });
+                
+            });*/
             
+            var titles = data.split(',');
+            $(titles).each(function (idx) {
+                menuItems.push(titles[idx]);
+            });
+ 
             if(callback){
                 callback();
             }

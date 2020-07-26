@@ -28,7 +28,8 @@ function replaceUrl(){
     links.each(function(idx) {
          $(links[idx]).attr('href', getBaseUrl() + $(links[idx]).attr('href'));
     });  
+
+    $('header img').attr('src', getBaseUrl() + $(links[idx]).attr('src'));
     
-    var links = $('header a');
 }
 
