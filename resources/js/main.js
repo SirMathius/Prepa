@@ -39,3 +39,14 @@ function getParam(key) {
     }   
 }
 
+function getBaseUrl(){
+    
+    var base = window.location.origin;
+    
+    if(window.location.pathname.includes('prepa-website')){
+       base = base + '/prepa-website'
+    }
+       
+    return base;
+}
+

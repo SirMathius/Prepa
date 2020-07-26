@@ -1,8 +1,8 @@
 var menuItems = [];
-var textPath = '/material/textos';
-var imgPath = '/material/imagenes';
-var downloadPath = 'material/descarga'
-var origin = window.location.origin;
+var origin = getBaseUrl();
+var textPath = getBaseUrl() + '/material/textos';
+var imgPath = getBaseUrl() + '/material/imagenes';
+var downloadPath = getBaseUrl() + '/material/descarga'
 
 $(document).ready(function() {
     
@@ -118,7 +118,7 @@ function loadArticleImg(key, transition){
 }
 
 function loadArticleDownloadLink(key){
-    $("#article-btn-download").attr('href', origin + '/' + downloadPath +'/' + key + '.pdf');
+    $("#article-btn-download").attr('href', downloadPath +'/' + key + '.pdf');
 }
 
 function loadArticleMenu () {

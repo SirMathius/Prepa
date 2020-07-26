@@ -2,8 +2,9 @@ $(document).ready(function() {
     
     var origin = location.origin;
     
-    $('#header').load('https://sirmathius.github.io/prepa-website/views/templates/header.html', function(){
+    $('#header').load(getBaseUrl() + '/views/templates/header.html', function(){
         checkOffset();
+        replaceUrl();
     });
-    $('#footer').load('https://sirmathius.github.io/prepa-website/views/templates/footer.html');
+    $('#footer').load(getBaseUrl() + '/views/templates/footer.html');
 });

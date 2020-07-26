@@ -21,3 +21,14 @@ function checkOffset() {
     }
 }
 
+function replaceUrl(){
+   
+    var links = $('header a');
+    
+    links.each(function(idx) {
+         $(links[idx]).attr('href', getBaseUrl() + $(links[idx]).attr('href'));
+    });  
+    
+    var links = $('header a');
+}
+
